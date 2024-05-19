@@ -1,4 +1,4 @@
-let padel= [
+let padel = [
     {
     "id": 1,
     "producto": "Ball Up",
@@ -65,7 +65,7 @@ let reposteria = [
             "Stock": 0, 
             },
 ]
-let codigosQr =[
+let codigosQr = [
     {
         "id": 1,
         "producto": "QR",
@@ -94,7 +94,7 @@ let codigosQr =[
                 "Stock": 0, 
                 },   
 ]
-let llaveros =[
+let llaveros = [
     {
         "id": 1,
         "producto": "Personalizado",
