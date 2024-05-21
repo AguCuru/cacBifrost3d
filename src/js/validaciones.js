@@ -1,9 +1,9 @@
 // validaciones.js
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formRegister");
 
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault(); // Evitar que el formulario se envíe automáticamente
 
         // Validar el nombre
@@ -62,7 +62,37 @@ document.addEventListener("DOMContentLoaded", function() {
             errorPassword2.textContent = "";
         }
 
-        // Validar la fecha de nacimiento (puedes agregar tu lógica de validación aquí)
+        // Validar la fecha de nacimiento 
+        // Obtener la fecha de nacimiento del campo
+        const birthdateInput = document.getElementById("birthdate");
+        const birthdate = new Date(birthdateInput.value);
+
+        // Obtener la fecha actual
+        const today = new Date();
+
+        // Calcular la edad restando el año actual menos el año de nacimiento
+        const age = today.getFullYear() - birthdate.getFullYear();
+
+        // Si el mes actual es menor que el mes de nacimiento, o si es el mismo mes pero el día actual es menor que el día de nacimiento, se resta un año
+        if (
+            today.getMonth() < birthdate.getMonth() ||
+            (today.getMonth() === birthdate.getMonth() && today.getDate() < birthdate.getDate())
+        ) {
+            age--;
+        }
+
+        // Si la edad es menor de 18, muestra un mensaje de error
+        if (age < 18) {
+            const errorBirthdate = document.getElementById("error-birthdate");
+            errorBirthdate.textContent = "Debes ser mayor de 18 años.";
+            birthdateInput.focus(); // Dar foco al campo de fecha de nacimiento
+            return false;
+        } else {
+            // Si la edad es 18 o mayor, elimina cualquier mensaje de error
+            const errorBirthdate = document.getElementById("error-birthdate");
+            errorBirthdate.textContent = "";
+        }
+
 
         // Validar el país (puedes agregar tu lógica de validación aquí)
 

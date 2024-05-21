@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head id="id_head"></head>
 
-<head id="id_head"></head>
+  <body>
+    <div class="container grid">
+      <header id="id_header"></header>
+      <main>
+        <!-- Formulario -->
+        <section id="form-wrapper">
+          <h2>Registro</h2>
 
-<body>
-    <div class="container">
-        <header id="id_header"></header>
-        <main>
-            <!-- Formulario -->
-                <section id="form-wrapper">
-                    <h2>Registro</h2>
+          <form action="/" method="POST" id="formRegister" novalidate>
+            <!-- Nombre -->
+            <div class="form-control">
+              <label for="">Nombre</label>
+              <input type="text" name="firstname" id="firstname" required />
+              <div class="error" id="error-firstname"></div>
+            </div>
 
-                    <form action="#" method="get" id="formRegister" novalidate>
+            <!-- Apellido -->
+            <div class="form-control">
+              <label for="">Apellido</label>
+              <input type="text" name="lastname" id="lastname" required />
+              <div class="error" id="error-lastname"></div>
+            </div>
 
-                        <!-- Nombre -->
-                        <div class="form-control">
-                            <label for="">Nombre</label>
-                            <input type="text" name="firstname" id="firstname" required>
-                        </div>
-                        <div class="error" id="error-firstname"></div>
+            <!-- Mail -->
+            <div class="form-control">
+              <label for="">Mail</label>
+              <input type="email" name="email" id="email" required />
+              <div class="error" id="error-email"></div>
+            </div>
 
-                        <!-- Apellido -->
-                        <div class="form-control">
-                            <label for="">Apellido</label>
-                            <input type="text" name="lastname" id="lastname" required>
-                        </div>
-                        <div class="error" id="error-lastname"></div>
+            <!-- Contraseña -->
+            <div class="form-control">
+              <label for="">Contraseña</label>
+              <input type="password" name="password" id="password" required />
+              <div class="error" id="error-password"></div>
+            </div>
 
-                        <!-- Mail -->
-                        <div class="form-control">
-                            <label for="">Mail</label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-                        <div class="error" id="error-email"></div>
+            <!-- Repetir Contraseña -->
+            <div class="form-control">
+              <label for="">Contraseña</label>
+              <input type="password" name="password2" id="password2" required />
+              <div class="error" id="error-password2"></div>
+            </div>
 
-                        <!-- Contraseña -->
-                        <div class="form-control">
-                            <label for="">Contraseña</label>
-                            <input type="password" name="password" id="password" required>
-                        </div>
-                        <div class="error" id="error-password"></div>
+            <!-- Fecha de Nacimiento -->
+            <div class="form-control">
+              <label for="">Fecha de Nacimiento</label>
+              <input type="date" name="birthdate" id="birthdate" required />
+              <div class="error" id="error-birthdate"></div>
+            </div>
 
-                        <!-- Repetir Contraseña -->
-                        <div class="form-control">
-                            <label for="">Contraseña</label>
-                            <input type="password" name="password2" id="password2" required>
-                        </div>
-                        <div class="error" id="error-password2"></div>
+            <!-- País -->
+            <div class="form-control">
+              <select name="country" id="country" class="form-select" required>
+                <option value="">País</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="BR">Brasil</option>
+                <option value="CH">Chile</option>
+                <option value="CO">Colombia</option>
+              </select>
+            </div>
 
-                        <!-- Fecha de Nacimiento -->
-                        <div class="form-control">
-                            <label for="">Fecha de Nacimiento</label>
-                            <input type="date" name="birthdate" id="birthdate" required>
-                        </div>
+            <!-- Términos y condiciones -->
+            <div class="form-terms">
+              <div class="terms">
+                <input type="checkbox" id="terms" required />
+                <span for="">Acepto términos y condiciones.</span>
+              </div>
+              <div class="error" id="error-terms"></div>
+            </div>
 
-                        <!-- País -->
-                        <div class="form-control">
-                            <select name="country" id="country" class="form-select">
-                                <option value="">País</option>
-                                <option value="AR">Argentina</option>
-                                <option value="BO">Bolivia</option>
-                                <option value="BR">Brasil</option>
-                                <option value="CH">Chile</option>
-                                <option value="CO">Colombia</option>
-                            </select>
-                        </div>
+            <!-- Botón de registro -->
+            <button type="submit">Registrarse</button>
 
-                        <!-- Términos y condiciones -->
-                        <div class="form-terms">
-                            <div class="terms">
-                                <input type="checkbox" id="terms" required>
-                                <label for="">Acepto términos y condiciones.</label>
-                            </div>
-                        </div>
-
-                        <!-- Botón de registro -->
-                        <button type="submit">Registrarse</button>
-
-                        <!-- Link de Ayuda -->
-                        <div class="form-help">
-                            <a href="#">Necesitás ayuda?</a>
-                        </div>
-
-                    </form>
-                    </section>
-        </main>
-        <footer id="id_footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        </footer>
+            <!-- Link de Ayuda -->
+            <div class="form-help">
+              <a href="#">Necesitás ayuda?</a>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer
+        id="id_footer"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      ></footer>
     </div>
-    <script src="valicadiones.js"></script>
+    <script src="../js/validaciones.js"></script>
     <script src="../js/fragments/head.js"></script>
     <script src="../index.html"></script>
     <script src="../js/fragments/header.js"></script>
     <script src="../js/fragments/footer.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

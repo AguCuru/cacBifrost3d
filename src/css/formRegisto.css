@@ -1,3 +1,5 @@
+@import url(style.css);
+
 /* Estilos para el formulario */
 #form-wrapper {
     max-width: 400px; /* Ancho máximo del contenedor del formulario */
@@ -9,6 +11,13 @@
 
 h2 {
     text-align: center;
+    color: var( --primary-color)
+
+}
+
+/* Estilos para cuando haya un error en el form */
+.error{
+    color: var(--primary-color);    
 }
 
 /* Estilos para los elementos del formulario */
@@ -47,6 +56,16 @@ button[type="submit"] {
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Términos y condiciones */
+.form-terms {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.form-terms input{
+    margin-right: 5px;
 }
 
 /* Estilos para el enlace de ayuda */
