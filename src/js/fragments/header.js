@@ -9,7 +9,7 @@
             </div>
             <nav class="navbar">
                 <ul>
-                    <li class=""><a href="../index.html">Inicio</a></li>
+                    <li class=""><a href="./index.html">Inicio</a></li>
                     <li class=""><a href="../pages/productos.html">Productos</a></li>
                     <li class=""><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li class=""><a href="../pages/login.html">Login</a></li>
