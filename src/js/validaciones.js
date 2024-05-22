@@ -1,8 +1,8 @@
-// validaciones.js
+// validacione form register.js
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formRegister");
-
+    
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Evitar que el formulario se envíe automáticamente
 
@@ -109,5 +109,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Si todas las validaciones son exitosas, el formulario se enviará normalmente
         form.submit();
+    });
+});
+
+// validacione form login.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("formLogin");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+      // Validar el email
+      const email = document.getElementById("email");
+      const errorEmail = document.getElementById("error-email");
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) {
+        errorEmail.textContent = "Por favor, ingresa un email válido.";
+        email.focus();
+        return false;
+      } else {
+        errorEmail.textContent = "";
+      }
+
+      // Validar la contraseña
+      const password = document.getElementById("password");
+      const errorPassword = document.getElementById("error-password");
+      if (password.value.trim() === "") {
+        errorPassword.textContent = "Por favor, ingresa tu contraseña.";
+        password.focus();
+        return false;
+      } else {
+        errorPassword.textContent = "";
+      }
+
+      // Si todas las validaciones son exitosas, el formulario se enviará normalmente
+      form.submit();
     });
 });
