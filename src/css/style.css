@@ -74,8 +74,8 @@ main{
     /* Maquetacion */
     .container {
         display: grid;
-        grid-template-rows: 100px auto 100px;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 150px auto 100px;
+        grid-template-columns: 1fr 3% 1fr;
         grid-template-areas:
             "header header header header"
             "main   main    main   main "
@@ -84,10 +84,12 @@ main{
 
     .container > header {
         grid-area: header;
-        background-color: red;
+        background-image: url(../img/LogoBifrostDobleCortadoMitad.jpg);
+        background-repeat: no-repeat;
+        background-size: contain ;
         display: flex;
         justify-content: center; /* Centramos horizontalmente */
-        align-items: center; /* Centramos verticalmente */
+        align-items: end; /* Centramos verticalmente */
     }
 
     .container > main {
@@ -108,13 +110,7 @@ main{
         grid-template-columns: 1fr 1fr 1fr;
         
     }
-    
-    #logo {
-        margin-right: 200px;
-        display: flex;
-        align-items: center;
-    }
-    
+        
     .navbar ul {
         list-style: none;
         padding: 0;
@@ -131,10 +127,16 @@ main{
     }
     
     .navbar ul li a {
+        font-size: rem;
+        font-weight: bold;
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
+        
     }
+    .navbar :hover{
+        color: #2cc9e5;
 
+    }
      /* footer */
      
      footer {
