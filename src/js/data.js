@@ -72,7 +72,7 @@ let codigosQr = [
         "descripcion": "Código QR 3D para escanear y acceder a sitio web",
         "precio": 4000,
         "image": "../../src/img/9.jpg",
-        "video": "",
+        "video": "https://www.youtube.com/embed/UqQwXEFDSAs",
         "Stock": 0,
     },
     {
