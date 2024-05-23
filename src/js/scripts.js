@@ -8,13 +8,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const productsContainer = document.getElementById("products-qr-container");
+
+    codigosQr.slice(0, 3).forEach(function(product) { // Limitar a los primeros 3 productos
+        const card = createCardIndex(product);
+        productsContainer.appendChild(card);
+    });
+});
+
 function createCardIndex(product) {
     const card = document.createElement("div");
     card.classList.add("card");
 
     const image = document.createElement("img");
-    let path = "../" + product.image;
-    image.src = path;
+    image.src = product.image;
     image.alt = product.producto;
     card.appendChild(image);
 
@@ -41,21 +49,13 @@ function createCardIndex(product) {
     return card;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const productsContainer = document.getElementById("products-qr-container");
-
-    codigosQr.slice(0, 3).forEach(function(product) { // Limitar a los primeros 3 productos
-        const card = createCard(product);
-        productsContainer.appendChild(card);
-    });
-});
 
 function createCard(product) {
     const card = document.createElement("div");
     card.classList.add("card");
 
     const image = document.createElement("img");
-    let path = "../" + product.image;
+    let path = "../.." + product.image;
     image.src = path;
     image.alt = product.producto;
     card.appendChild(image);
