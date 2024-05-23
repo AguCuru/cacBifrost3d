@@ -35,6 +35,12 @@ main{
     
 }
 
+h1{
+    color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -49,27 +55,7 @@ main{
     font-weight: bold;
 }
 
-/* Estilos para dispositivos móviles (por ejemplo, smartphones) */
-@media screen and (max-width: 767px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-}
 
-/* Estilos para tabletas */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .container {
-        width: 90%;
-    }
-}
-
-/* Estilos para pantallas de escritorio */
-@media screen and (min-width: 992px) {
-    .container {
-        width: 80%;
-    }
-}
 
     /* Maquetacion */
     .container {
@@ -95,9 +81,10 @@ main{
     .container > main {
         grid-area: main;
     }
-    .container > footer {
+    .container > footer  {
         grid-area: footer;
-        background-color: blueviolet;
+        background-color: rgb(72, 5, 134);
+        
         
     }
 
@@ -140,6 +127,9 @@ main{
      /* footer */
      
      footer {
+        background-image: url(../img/fondoFooter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover ;
         margin-top: auto;
         bottom: 0; /* Lo sitúa en la parte inferior */
         left: 0; /* Alinea a la izquierda */
@@ -148,6 +138,15 @@ main{
         color: #fff; /* Color del texto del pie de página */
         padding: 20px; /* Espacio interno del pie de página */
       }
+
+      footer > .logo {
+        height: 100px;
+        width: 100px;
+      }
+
+    .iconos   {
+        color: #ddd;
+    }
 
     /* card */
 
@@ -276,7 +275,7 @@ main{
     background-color: #0056b3;
   }
 
-  
+
 
   .separator {
     width: 100%;
