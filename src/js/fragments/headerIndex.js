@@ -5,7 +5,7 @@
             
             <nav class="navbar">
                 <ul>
-                    <li class="navbar"><a href="/index.html">Inicio</a></li>
+                    <li class="navbar"><a href="/cacBifrost3d/index.html">Inicio</a></li>
                     <li class="navbar"><a href="./src/pages/productos.html">Productos</a></li>
                     <li class="navbar"><a href="./src/pages/nosotros.html">Nosotros</a></li>
                     <li class="navbar"><a href="./src/pages/login.html">Login</a></li>
