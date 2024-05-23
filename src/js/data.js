@@ -4,7 +4,7 @@ let padel = [
         "producto": "Ball Up",
         "descripcion": "Tubo para recoger bolas de padel/tenis fondo color",
         "precio": 35000,
-        "image": "../src/img/Padel1.jpg",
+        "image": "/src/img/Padel1.jpg",
         "video": "",
         "Stock": 10,
     },
