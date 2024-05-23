@@ -55,7 +55,7 @@ function createCard(product) {
     card.classList.add("card");
 
     const image = document.createElement("img");
-    let path = "../.." + product.image;
+    let path = "../../" + product.image;
     image.src = path;
     image.alt = product.producto;
     card.appendChild(image);
