@@ -139,11 +139,6 @@ h1{
         padding: 20px; /* Espacio interno del pie de página */
       }
 
-      footer > .logo {
-        height: 100px;
-        width: 100px;
-      }
-
     .iconos   {
         color: #ddd;
     }
