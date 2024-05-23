@@ -127,6 +127,9 @@ h1{
      /* footer */
      
      footer {
+        background-image: url(../img/fondoFooter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover ;
         margin-top: auto;
         bottom: 0; /* Lo sitúa en la parte inferior */
         left: 0; /* Alinea a la izquierda */
@@ -134,6 +137,11 @@ h1{
         background-color: #333; /* Color de fondo del pie de página */
         color: #fff; /* Color del texto del pie de página */
         padding: 20px; /* Espacio interno del pie de página */
+      }
+
+      footer > .logo {
+        height: 100px;
+        width: 100px;
       }
 
     .iconos   {
