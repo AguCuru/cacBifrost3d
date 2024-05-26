@@ -1,9 +1,8 @@
-let head =
-    `
+let head = `
     
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inicio | Bifrost 3D</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/biftostFavicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,10 +13,9 @@ let head =
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/formRegisto.css" />
-        <script src="./js/index.js"></script>
+        <title id="dynamicTitle"></title>
         <script src="https://kit.fontawesome.com/5c70c4e3a8.js" crossorigin="anonymous"></script>
     
-    `
+    `;
 
-document.getElementById("id_head").innerHTML = head;    
-
+document.getElementById("id_head").innerHTML = head;
