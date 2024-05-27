@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Obtener el título correspondiente a la página actual
   var pageTitle = pageTitles[currentPage] + " | Bifrost 3D";
 
+  if (pageTitle.includes("undefined")) {
+    pageTitle = "Inicio | Bifrost 3D";
+  }
+
   // Actualizar el contenido del título en el head
   document.getElementById("dynamicTitle").innerText = pageTitle;
 });
