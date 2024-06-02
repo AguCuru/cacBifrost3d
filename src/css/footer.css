@@ -1,0 +1,22 @@
+/* footer */
+
+footer {
+  /* background-image: url(../img/fondoFooter.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: auto;
+  bottom: 0; /* Lo sitúa en la parte inferior */
+  left: 0; /* Alinea a la izquierda */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  background-color: #333; /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto del pie de página */
+  padding: 20px; /* Espacio interno del pie de página */
+}
+
+.iconos {
+  color: #ddd;
+}
+
+footer {
+  background-color: white;
+}
