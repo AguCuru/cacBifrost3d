@@ -1,22 +1,60 @@
 /* footer */
+:root {
+  --bg-color: #181419;
+  --primary-color: #9f3647;
+  --secondary-color: #ffc098;
+  --third-color: #db4648;
+  --third-bis-color: #db4648f2;
+  --bg-input-color: #b50de42c;
+  --bg-color: #0c0c0c;
+  --text-color: #fff;
+  --main-color: #ae8957;
 
-footer {
-  /* background-image: url(../img/fondoFooter.jpg); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: auto;
-  bottom: 0; /* Lo sitúa en la parte inferior */
-  left: 0; /* Alinea a la izquierda */
-  width: 100%; /* Asegura que ocupe todo el ancho */
-  background-color: #333; /* Color de fondo del pie de página */
-  color: #fff; /* Color del texto del pie de página */
-  padding: 20px; /* Espacio interno del pie de página */
-}
-
-.iconos {
-  color: #ddd;
+  --big-font: 5.5rem;
+  --p-font: 1rem;
 }
 
 footer {
-  background-color: white;
+  display: grid;
+  width: 100%;
+  z-index: 1000;
+  padding: 35px 7%;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  transition: all 0.5s ease;
+  justify-items: center;
+  background: linear-gradient(180deg, rgb(41, 29, 69) 0%, rgb(16, 15, 15) 100%);
+}
+
+.logo-footer a {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-footer img {
+  width: 20%;
+  height: auto;
+  opacity: 0.6;
+  border-radius: 12px;
+  min-width: 150px;
+}
+
+.icons-footer {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.icons-footer i {
+  margin: 35px 10px;
+  color: var(--text-color);
+  font-size: 23px;
+  transition: all 0.6s;
+}
+.icons-footer i:hover {
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+.copyright {
+  color: var(--text-color);
 }

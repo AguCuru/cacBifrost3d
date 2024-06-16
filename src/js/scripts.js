@@ -190,3 +190,16 @@ function mostrarProductos() {
 document.addEventListener("DOMContentLoaded", function () {
   mostrarProductos();
 });
+
+let menu = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menu.onclick = () => {
+  menu.classList.toggle("bx-x");
+  navlist.classList.toggle("open");
+};
+
+AOS.init({
+  offset: 1,
+  duration: 1200,
+});
