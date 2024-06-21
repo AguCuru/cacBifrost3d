@@ -1,17 +1,9 @@
-@import url(header.css);
-@import url(footer.css);
 @import url(menu-hamburg.css);
+@import url(footer.css);
 @import url(main.css);
-/* @import url(card.css); */
+@import url(header.css);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Nunito", sans-serif;
-}
+/* @import url(card.css); */
 :root {
   --bg-color: #181419;
   --primary-color: #9f3647;
@@ -24,8 +16,19 @@
   --main-color: #ae8957;
 
   --big-font: 2.5rem;
+  --medium-font: 1.5rem;
+  --small-font: 1rem;
   --p-font: 1rem;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
 /* Estilos base para todos los dispositivos */
 body {
   box-sizing: border-box;
@@ -33,23 +36,24 @@ body {
   color: var(--text-color);
   font-size: 6px;
   line-height: 1.6;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0;
-  max-width: 100vw;
+  /* max-width: 100vw; */
   background: linear-gradient(
     180deg,
-    rgb(16, 15, 15) 10%,
-    rgb(41, 29, 69) 100%
+    rgb(16, 15, 15) -10%,
+    rgb(37, 4, 113) 80%
   );
 }
 .grid-container {
   display: grid;
-  grid-template-rows: 80px auto 100px;
+  grid-template-rows: 10vh auto 10vh;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
     "main"
     "footer";
+  width: 320px;
 }
 .grid-container > header {
   grid-area: header;
@@ -81,6 +85,23 @@ body {
   color: var(--text-color);
   margin-right: 6px;
 }
+@media (min-width: 769px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    width: 768px;
+  }
+}
+
 /* .hero {
    position: relative; 
   width: 100%;
