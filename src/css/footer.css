@@ -1,21 +1,4 @@
 /* footer */
-:root {
-  --bg-color: #181419;
-  --primary-color: #9f3647;
-  --secondary-color: #ffc098;
-  --third-color: #db4648;
-  --third-bis-color: #db4648f2;
-  --bg-input-color: #b50de42c;
-  --bg-color: #0c0c0c;
-  --text-color: #fff;
-  --main-color: #ae8957;
-
-  --big-font: 2.5rem;
-  --medium-font: 2rem;
-  --small-font: 1rem;
-  --xsmall-font: 0.75rem;
-  --p-font: 1.5rem;
-}
 
 footer {
   display: grid;
@@ -26,7 +9,7 @@ footer {
   grid-template-rows: 10vh;
   align-items: center;
   transition: all 0.5s ease;
-  background: linear-gradient(180deg, rgb(41, 29, 69) 0%, rgb(16, 15, 15) 100%);
+  /* background: linear-gradient(180deg, rgb(37, 4, 113) 0%, rgb(16, 15, 15) 50%); */
 }
 
 .logo-footer {
@@ -44,7 +27,7 @@ footer {
   height: auto;
   opacity: 0.6;
   border-radius: 12px;
-  min-width: 100px;
+  min-width: 75px;
 }
 
 .icons-footer {
@@ -57,7 +40,7 @@ footer {
 .icons-footer i {
   margin: 35px 10px;
   color: var(--text-color);
-  font-size: 23px;
+  font-size: 20px;
   transition: all 0.6s;
 }
 .icons-footer a {
@@ -72,5 +55,5 @@ footer {
   display: flex;
   justify-content: center;
   color: var(--text-color);
-  font-size: var(--xsmall-font);
+  font-size: var(--xxs-font);
 }
