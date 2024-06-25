@@ -1,0 +1,126 @@
+/*------ form login ------*/
+
+/* main {
+  height: 90vh;
+} */
+
+.register-box {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 250px;
+
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.register-box h2 {
+  margin: 0 0 15px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.register-box .user-box {
+  position: relative;
+}
+
+.register-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.register-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 0;
+  font-size: 12px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.register-box .user-box input:focus ~ label,
+.register-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.register-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+  letter-spacing: 4px;
+}
+button[type="submit"] {
+  width: 100%; /* Ancho completo del botón */
+  padding: 10px; /* Espaciado interno del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  font-size: var(--xs-font);
+}
+.error {
+  color: red;
+  font-size: var(--xxs-font);
+  padding-bottom: 5px;
+}
+.terms {
+  margin: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.terms span {
+  width: 400px;
+  font-size: 9px;
+}
+
+#image {
+  margin-top: 15px;
+}
+#birthdate {
+  margin-top: 15px;
+}
+
+/*------ responsive 769 a */
+@media (min-width: 769px) {
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  .register-box .user-box input {
+    margin-bottom: 30px;
+  }
+}

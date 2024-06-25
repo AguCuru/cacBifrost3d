@@ -4,6 +4,7 @@ main {
   /* grid-template-rows: 1fr 1fr; */
   box-sizing: border-box;
   margin: 0 auto;
+  height: 180vh;
 }
 
 /* HERO */
@@ -167,7 +168,7 @@ main {
   padding: 1px 2px;
 }
 
-/*------ responsive 769 a 1440 ------*/
+/*------ responsive 769 a 1024 ------*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero {

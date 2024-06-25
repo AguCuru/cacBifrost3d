@@ -1,4 +1,4 @@
-let padel = [
+let productos = [
   {
     id: 1,
     producto: "Ball Up",
@@ -7,6 +7,7 @@ let padel = [
     image: "src/img/Padel1.jpg",
     video: "",
     Stock: 10,
+    categoria: "padel",
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ let padel = [
     image: "src/img/Padel3.jpg",
     video: "",
     Stock: 0,
+    categoria: "padel",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ let padel = [
     image: "src/img/BolaCinto.jpg",
     video: "",
     Stock: 15,
+    categoria: "padel",
   },
   {
     id: 4,
@@ -36,116 +39,124 @@ let padel = [
     image: "src/img/Presu.jpg",
     video: "",
     Stock: 6,
+    categoria: "padel",
   },
-];
-let reposteria = [
+
   {
-    id: 1,
+    id: 5,
     producto: "Cortante escudo Club",
     descripcion: "Diseño del escudo del club",
     precio: 6000,
     image: "src/img/CortClub.jpg",
     video: "",
     Stock: 8,
+    categoria: "reposteria",
   },
   {
-    id: 2,
+    id: 6,
     producto: "Cortante Personaje",
     descripcion: "Elegí el personaje de tu historia favorita",
     precio: 9000,
     image: "src/img/CortPers.jpg",
     video: "",
     Stock: 4,
+    categoria: "reposteria",
   },
   {
-    id: 3,
+    id: 7,
     producto: " Pizarras Tácticas",
     descripcion: "Para Entrenadores",
     precio: 25000,
     image: "src/img/9.jpg",
     video: "",
     Stock: 0,
+    categoria: "pizarra",
   },
-];
-let codigosQr = [
+
   {
-    id: 1,
+    id: 8,
     producto: "QR",
     descripcion: "Código QR 3D para escanear y acceder a sitio web",
     precio: 4000,
     image: "src/img/QrSimple.jpg",
     video: "https://www.youtube.com/embed/UqQwXEFDSAs",
     Stock: 0,
+    categoria: "qr",
   },
   {
-    id: 2,
+    id: 9,
     producto: "QR Wi-Fi",
     descripcion: "Codigo QR 3D para acceso a red Wi-Fi",
     precio: 7000,
     image: "src/img/QrPers.jpg",
     video: "",
     Stock: 0,
+    categoria: "qr",
   },
   {
-    id: 3,
+    id: 10,
     producto: "QR Pago",
     descripcion: "Codigo QR 3D para acceso a pago con el logo del comercio",
     precio: 10000,
     image: "src/img/QrPago.jpg",
     video: "",
     Stock: 0,
+    categoria: "qr",
   },
-];
-let llaveros = [
+
   {
-    id: 1,
+    id: 11,
     producto: "Personalizado",
     descripcion: "Letra inicial personalizada",
     precio: 3000,
     image: "src/img/Letra.jpg",
     video: "",
     Stock: 0,
+    categoria: "llavero",
   },
   {
-    id: 2,
+    id: 12,
     producto: "Ventana",
     descripcion: "Friends",
     precio: 2500,
     image: "src/img/VentFriends.jpg",
     video: "",
     Stock: 8,
+    categoria: "marco",
   },
   {
-    id: 3,
+    id: 13,
     producto: "Otros",
     descripcion: "Diseños varios personalizado",
     precio: 6000,
     image: "src/img/AtomicHomero.jpg",
     video: "",
     Stock: 0,
+    categoria: "simpson",
   },
-];
-let varios = [
+
   {
-    id: 1,
+    id: 14,
     producto: "Maceta",
     descripcion: "Maceta pequeña de formas variadas",
     precio: 12000,
     image: "src/img/Macetas.jpg",
     video: "",
     Stock: 12,
+    categoria: "maceta",
   },
   {
-    id: 2,
+    id: 15,
     producto: "Elementos adorno para pared",
     descripcion: "Diseño 2D para colgar/pegar en la pared",
     precio: 18000,
     image: "src/img/breakingbad.jpg",
     video: "",
     Stock: 15,
+    categoria: "cuadro2d",
   },
   {
-    id: 3,
+    id: 16,
     producto: "Decoracion",
     descripcion:
       "elementos para apoyar, soporte para auriculares,trípode para Guitarra, etc",
@@ -153,7 +164,10 @@ let varios = [
     image: "src/img/PortAuri.jpg",
     video: "",
     Stock: 6,
+    categoria: "varios",
   },
 ];
 
 console.log("data.js cargado correctamente");
+
+export default productos;
