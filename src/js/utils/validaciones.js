@@ -115,7 +115,7 @@ function validateRegister() {
     });
   });
 }
-
+validateRegister();
 // ---------------- Validacion Login ---------------- //
 
 function validateLogin() {
@@ -155,5 +155,4 @@ function validateLogin() {
     });
   });
 }
-
-export default { validateRegister, validateLogin };
+validateLogin();
