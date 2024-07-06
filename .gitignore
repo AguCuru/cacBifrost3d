@@ -1,0 +1,13 @@
+# Ignorar el archivo .env
+.env
+
+# Ignorar archivos generados por IDEs
+.vscode/
+.idea/
+
+# Ignorar archivos de dependencias de Python
+venv/
+__pycache__/
+
+# Carpeta de variables de entorno
+env/

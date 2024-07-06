@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="id_head"></head>
+
+<body>
+
+  <header id="id_header"></header>
+  <main class="grid-container ">
+    <!-- Formulario -->
+
+    <div class="register-box">
+      <h2>Ingresar Producto</h2>
+      <form action="/producto-ingresado " method="POST" id="formProducto" enctype="multipart/form-data">
+
+
+        <!-- Producto -->
+        <div class="user-box">
+          <label for="producto">Producto</label>
+          <input type="text" name="producto" id="producto" required />
+          <div class="error" id="error-producto"></div>
+        </div>
+
+        <!-- Descripcion -->
+        <div class="user-box">
+          <label for="descripcion">Descripcion</label>
+          <input type="text" name="descripcion" id="descripcion" required />
+          <div class="error" id="error-descripcion"></div>
+        </div>
+
+        <!-- Precio -->
+        <div class="user-box">
+          <label for="precio">Precio</label>
+          <input type="number" name="precio" id="precio" required />
+          <div class="error" id="error-precio"></div>
+        </div>
+        <!-- Imagen -->
+        <div class="user-box">
+          <label for="product_image">Imagen</label>
+          <input type="file" name="product_image" id="product_image" required />
+          <div class="error" id="error-product_image"></div>
+        </div>
+
+        <!-- Video -->
+        <div class="user-box">
+          <label for="video">Video</label>
+          <input type="text" name="video" id="video" />
+          <div class="error" id="error-video"></div>
+        </div>
+
+        <!-- Stock -->
+        <div class="user-box">
+          <label for="stock">Stock</label>
+          <input type="number" name="stock" id="stock" required />
+          <div class="error" id="error-stock"></div>
+        </div>
+
+        <!-- Categoria -->
+        <div class="user-box">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" name="categoria" required>
+            {% for category in categories %}
+            <option value="{{ category }}">{{ category }}</option>
+            {% endfor %}
+          </select>
+          <div class="error" id="error-categoria"></div>
+        </div>
+
+        <!-- Producto Registrado -->
+        <button type="submit">Ingresar</button>
+
+      </form>
+    </div>
+  </main>
+  <footer id="id_footer">
+  </footer>
+  </div>
+
+  <script type="module" src="../js/utils.js"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/utils/validaciones.js"></script>
+
+</body>
+
+</html>
