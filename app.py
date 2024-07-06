@@ -5,22 +5,12 @@ import os
 import time
 import mysql.connector
 from models.enums import Category, Rol
-from dotenv import load_dotenv
 
 # from config import Config
 # Instalar con pip install flask-cors
 from flask_cors import CORS
 
-# Cargar variables de entorno desde el archivo .env
-load_dotenv()
-
 app = Flask(__name__)
-
-# Configuración de la base de datos utilizando variables de entorno
-app.config["MYSQL_HOST"] = os.getenv("DB_HOST")
-app.config["MYSQL_USER"] = os.getenv("DB_USER")
-app.config["MYSQL_PASSWORD"] = os.getenv("DB_PASSWORD")
-app.config["MYSQL_DB"] = os.getenv("DB_DATABASE")
 
 mysql = MySQL(app)
 CORS(app)  # Esto habilitará CORS para todas las rutas
@@ -35,13 +25,7 @@ class User:
     # Constructor de la clase
     def __init__(self, host, user, password, database):
         # Primero, establecemos una conexión inicial
-        self.conn = mysql.connector.connect(
-            host=app.config["MYSQL_HOST"],
-            user=app.config["MYSQL_USER"],
-            password=app.config["MYSQL_PASSWORD"],
-            database=app.config["MYSQL_DB"],
-        )
-
+        self.conn = mysql.connector.connect(host=host, user=user, password=password)
         self.cursor = self.conn.cursor()
 
         # Intentamos seleccionar la base de datos
