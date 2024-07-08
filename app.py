@@ -406,7 +406,7 @@ def productRegister():
 @app.route("/productos", methods=["GET"])
 def listar_productos():
     productos = product_instance.listar_productos()
-    return jsonify(productos)
+    return render_template("productos.html", productos=productos)
 
 
 # --------------------------------------------------------------------
