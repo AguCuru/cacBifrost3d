@@ -15,7 +15,7 @@ app = Flask(__name__)
 mysql = MySQL(app)
 CORS(app)  # Esto habilitará CORS para todas las rutas
 
-RUTA_DESTINO = r"C:\Agu\Proyectos\cacBifrost3d\img"
+RUTA_DESTINO = r"C:\Agu\Proyectos\cacBifrost3d\static\img"
 
 # --------------------------------------------------------------------
 import mysql.connector

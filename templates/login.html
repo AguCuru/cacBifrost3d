@@ -3,12 +3,12 @@
 
 
 
-<head id="id_head"></head>
+{% include 'head.html' %}
 
 <body>
 
   <header id="id_header"></header>
-
+  {% include 'header.html' %}
   <main class="grid-container">
     <div class="login-box">
       <h2>Login</h2>
@@ -31,7 +31,8 @@
       </form>
     </div>
   </main>
-  <footer id="id_footer"></footer>
+  {% include 'footer.html' %}
+
 
   <script type="module" src="../js/utils.js"></script>
   <script type="module" src="../js/main.js"></script>
