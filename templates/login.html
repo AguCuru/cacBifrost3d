@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+{% include 'head.html' %}
+
+<body>
+
+  <header id="id_header"></header>
+  {% include 'header.html' %}
+  <main class="grid-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="./login.html" method="POST" id="formLogin" novalidate>
+        <!-- Mail -->
+        <div class="user-box">
+
+          <input type="email" name="email" id="email" required />
+          <label for="">Mail</label>
+          <div class="error" id="error-email"></div>
+        </div>
+        <!-- Contraseña -->
+        <div class="user-box">
+          <input type="password" name="password" id="password" required />
+          <label for="">Contraseña</label>
+          <div class="error" id="error-password"></div>
+        </div>
+        <!-- Botón de login -->
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </main>
+  {% include 'footer.html' %}
+
+
+  <script type="module" src="../js/utils.js"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/utils/validaciones.js"></script>
+
+</body>
+
+</html>

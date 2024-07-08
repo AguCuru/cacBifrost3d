@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head id="id_head"></head>
+{% include 'head.html' %}
 
 <body>
 
-  <header id="id_header"></header>
+  {% include 'header.html' %}
   <main class="grid-container ">
     <!-- Formulario -->
 
     <div class="register-box">
       <h2>Registro</h2>
-
-      <form action="../pages/registro.html" method="POST" id="formRegister" enctype="multipart/form-data" novalidate>
-        <input hidden type="text" name="user_id">
+      <form action="/registrado" method="POST" id="formRegister" enctype="multipart/form-data">
+        <!-- <input hidden type="text" name="user_id"> -->
         <!-- Nombre -->
         <div class="user-box">
           <label for="firstname">Nombre</label>
@@ -78,7 +77,7 @@
         <!-- Términos y condiciones -->
         <div class="user-box">
           <div class="user-box terms">
-            <input type="checkbox" name="terms" id="terms" required />
+            <input type="checkbox" name="accepted_terms" id="accepted_terms" value="yes" required />
             <span for="">Acepto términos y condiciones.</span>
           </div>
           <div class="error" id="error-terms"></div>
@@ -94,7 +93,7 @@
       </form>
     </div>
   </main>
-  <footer id="id_footer">
+  {% include 'footer.html' %}
   </footer>
   </div>
 
