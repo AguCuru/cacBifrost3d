@@ -6,7 +6,8 @@
 </head>
 
 <body>
-  {% include 'header.html' %}
+  <header id="id_header">{% include 'header.html' %}</header>
+
   <main>
     <h1>Listado de Productos del Inventario</h1><br>
 
@@ -40,7 +41,9 @@
     </div>
 
   </main>
-  {% include '/footer.html' %}
+  <footer id="id_footer">
+    {% include '/footer.html' %}
+  </footer>
   <script>
     //const URL = "http://127.0.0.1:5000/"
 
